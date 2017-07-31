@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vocab Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Mystery Word Game</h1>
+    <ul id="blanks">
+      {{ #word }}
+        <li>_</li>
+      {{ /word }}
+    </ul>
+    <div class="guess">
+      <form class="input" action="/guess" method="post">
+        <input type="text" name="guess" placeholder="Guess a letter...">
+        <input type="submit" name="button">
+      </form>
+    </div>
+  </body>
+</html>
